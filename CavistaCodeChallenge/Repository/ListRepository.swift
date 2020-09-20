@@ -33,6 +33,7 @@ class ListRepository: NSObject {
         }.disposed(by: self.disposeBag)
     }
     
+    // filter empty data and date
     private func filterNonEmptyData(_ list: [ListJsonBO]) -> [ListJsonBO] {
         return list.filter{(($0.data != nil) && ($0.date != nil))}
     }

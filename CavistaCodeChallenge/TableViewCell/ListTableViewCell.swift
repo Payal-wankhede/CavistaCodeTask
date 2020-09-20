@@ -79,7 +79,7 @@ class ListTableViewCell: UITableViewCell {
                 maker.trailing.equalToSuperview().offset(-8)
                 maker.leading.equalToSuperview().offset(10)
             }
-            titleTextLabel.text = listJson.data
+            titleTextLabel.text = listJson.data?.trimmingCharacters(in: .newlines)
             descriptionTextLabel.text = listJson.date
         }
     }

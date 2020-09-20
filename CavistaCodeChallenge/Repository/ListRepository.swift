@@ -22,18 +22,23 @@ class ListRepository: NSObject {
     // MARK: Get project detail
     func setServiceRequestToGetList() {
         fetchDataFromRealm()
-        listService.getList().subscribe(onSuccess: { (list) in
+        listService.getList().subscribe(onSuccess: {[weak self] (list) in
+            let filteredList = self?.filterNonEmptyData(list)
             let realm = try? Realm()
             try? realm?.write {
-                realm?.add(list, update: Realm.UpdatePolicy.all)
+                realm?.add(filteredList ?? [], update: Realm.UpdatePolicy.all)
             }
         }) { (error) in
             print(error)
         }.disposed(by: self.disposeBag)
     }
     
+    private func filterNonEmptyData(_ list: [ListJsonBO]) -> [ListJsonBO] {
+        return list.filter{(($0.data != nil) && ($0.date != nil))}
+    }
+    
     //Fetch data from realm
-    func fetchDataFromRealm() {
+    private func fetchDataFromRealm() {
         guard let realm = try? Realm(), !realm.isInWriteTransaction else {
             return
         }

@@ -3,27 +3,43 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6F61FCB7BE0CCCB9793947AB /* Pods_CavistaCodeChallenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0E89BC9BB556BD3602CFCAA /* Pods_CavistaCodeChallenge.framework */; };
+		A01F65F725167527003C56E0 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A01F65F625167527003C56E0 /* DetailViewController.swift */; };
 		A022FD482515C0E6004F9160 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A022FD472515C0E6004F9160 /* AppDelegate.swift */; };
-		A022FD4A2515C0E6004F9160 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A022FD492515C0E6004F9160 /* SceneDelegate.swift */; };
-		A022FD4C2515C0E6004F9160 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A022FD4B2515C0E6004F9160 /* ViewController.swift */; };
-		A022FD4F2515C0E6004F9160 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A022FD4D2515C0E6004F9160 /* Main.storyboard */; };
+		A022FD4C2515C0E6004F9160 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A022FD4B2515C0E6004F9160 /* ListViewController.swift */; };
 		A022FD512515C0E8004F9160 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A022FD502515C0E8004F9160 /* Assets.xcassets */; };
 		A022FD542515C0E8004F9160 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A022FD522515C0E8004F9160 /* LaunchScreen.storyboard */; };
+		A022FD652515D402004F9160 /* ListJsonBO.swift in Sources */ = {isa = PBXBuildFile; fileRef = A022FD642515D402004F9160 /* ListJsonBO.swift */; };
+		A022FD6D2515FACB004F9160 /* ListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A022FD6C2515FACB004F9160 /* ListViewModel.swift */; };
+		A022FD6F2516000B004F9160 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A022FD6E2516000B004F9160 /* Extension.swift */; };
+		A022FD73251630EA004F9160 /* ListService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A022FD72251630EA004F9160 /* ListService.swift */; };
+		A022FD7525163571004F9160 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = A022FD7425163571004F9160 /* Constant.swift */; };
+		A022FD7725163B4E004F9160 /* ListRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = A022FD7625163B4E004F9160 /* ListRepository.swift */; };
+		A0F52C1B25171A3900A2AC92 /* ListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0F52C1A25171A3900A2AC92 /* ListTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8199FD663DB8FAF239406BFE /* Pods-CavistaCodeChallenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CavistaCodeChallenge.release.xcconfig"; path = "Target Support Files/Pods-CavistaCodeChallenge/Pods-CavistaCodeChallenge.release.xcconfig"; sourceTree = "<group>"; };
+		A01F65F625167527003C56E0 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		A022FD442515C0E6004F9160 /* CavistaCodeChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CavistaCodeChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A022FD472515C0E6004F9160 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A022FD492515C0E6004F9160 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		A022FD4B2515C0E6004F9160 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		A022FD4E2515C0E6004F9160 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A022FD4B2515C0E6004F9160 /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 		A022FD502515C0E8004F9160 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A022FD532515C0E8004F9160 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A022FD552515C0E8004F9160 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A022FD642515D402004F9160 /* ListJsonBO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListJsonBO.swift; sourceTree = "<group>"; };
+		A022FD6C2515FACB004F9160 /* ListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewModel.swift; sourceTree = "<group>"; };
+		A022FD6E2516000B004F9160 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		A022FD72251630EA004F9160 /* ListService.swift */ = {isa = PBXFileReference; indentWidth = 3; lastKnownFileType = sourcecode.swift; path = ListService.swift; sourceTree = "<group>"; };
+		A022FD7425163571004F9160 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		A022FD7625163B4E004F9160 /* ListRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListRepository.swift; sourceTree = "<group>"; };
+		A0F52C1A25171A3900A2AC92 /* ListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTableViewCell.swift; sourceTree = "<group>"; };
+		A97E78284E0C98C3EAE901DA /* Pods-CavistaCodeChallenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CavistaCodeChallenge.debug.xcconfig"; path = "Target Support Files/Pods-CavistaCodeChallenge/Pods-CavistaCodeChallenge.debug.xcconfig"; sourceTree = "<group>"; };
+		F0E89BC9BB556BD3602CFCAA /* Pods_CavistaCodeChallenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CavistaCodeChallenge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +47,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6F61FCB7BE0CCCB9793947AB /* Pods_CavistaCodeChallenge.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9F89F8CF1ECB6C9EA42D564D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A97E78284E0C98C3EAE901DA /* Pods-CavistaCodeChallenge.debug.xcconfig */,
+				8199FD663DB8FAF239406BFE /* Pods-CavistaCodeChallenge.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		A022FD3B2515C0E6004F9160 = {
 			isa = PBXGroup;
 			children = (
 				A022FD462515C0E6004F9160 /* CavistaCodeChallenge */,
 				A022FD452515C0E6004F9160 /* Products */,
+				9F89F8CF1ECB6C9EA42D564D /* Pods */,
+				CEC3DD194D34B3D1FE9027DE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +84,109 @@
 		A022FD462515C0E6004F9160 /* CavistaCodeChallenge */ = {
 			isa = PBXGroup;
 			children = (
-				A022FD472515C0E6004F9160 /* AppDelegate.swift */,
-				A022FD492515C0E6004F9160 /* SceneDelegate.swift */,
-				A022FD4B2515C0E6004F9160 /* ViewController.swift */,
-				A022FD4D2515C0E6004F9160 /* Main.storyboard */,
-				A022FD502515C0E8004F9160 /* Assets.xcassets */,
-				A022FD522515C0E8004F9160 /* LaunchScreen.storyboard */,
-				A022FD552515C0E8004F9160 /* Info.plist */,
+				A022FD5C2515D0D7004F9160 /* AppDelegate */,
+				A0F52C1925171A2200A2AC92 /* TableViewCell */,
+				A022FD5B2515D0C4004F9160 /* ViewController */,
+				A022FD5F2515D121004F9160 /* ViewModel */,
+				A022FD602515D12A004F9160 /* Repository */,
+				A022FD612515D132004F9160 /* Service */,
+				A022FD632515D15B004F9160 /* Bussiness Object */,
+				A022FD692515F1E1004F9160 /* HelperClass */,
+				A022FD5E2515D103004F9160 /* Resources */,
+				A022FD5D2515D0F3004F9160 /* StoryBoards */,
 			);
 			path = CavistaCodeChallenge;
+			sourceTree = "<group>";
+		};
+		A022FD5B2515D0C4004F9160 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				A022FD4B2515C0E6004F9160 /* ListViewController.swift */,
+				A01F65F625167527003C56E0 /* DetailViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		A022FD5C2515D0D7004F9160 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				A022FD472515C0E6004F9160 /* AppDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		A022FD5D2515D0F3004F9160 /* StoryBoards */ = {
+			isa = PBXGroup;
+			children = (
+				A022FD522515C0E8004F9160 /* LaunchScreen.storyboard */,
+			);
+			path = StoryBoards;
+			sourceTree = "<group>";
+		};
+		A022FD5E2515D103004F9160 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A022FD502515C0E8004F9160 /* Assets.xcassets */,
+				A022FD552515C0E8004F9160 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		A022FD5F2515D121004F9160 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				A022FD6C2515FACB004F9160 /* ListViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		A022FD602515D12A004F9160 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				A022FD7625163B4E004F9160 /* ListRepository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		A022FD612515D132004F9160 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				A022FD72251630EA004F9160 /* ListService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		A022FD632515D15B004F9160 /* Bussiness Object */ = {
+			isa = PBXGroup;
+			children = (
+				A022FD642515D402004F9160 /* ListJsonBO.swift */,
+			);
+			path = "Bussiness Object";
+			sourceTree = "<group>";
+		};
+		A022FD692515F1E1004F9160 /* HelperClass */ = {
+			isa = PBXGroup;
+			children = (
+				A022FD6E2516000B004F9160 /* Extension.swift */,
+				A022FD7425163571004F9160 /* Constant.swift */,
+			);
+			path = HelperClass;
+			sourceTree = "<group>";
+		};
+		A0F52C1925171A2200A2AC92 /* TableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				A0F52C1A25171A3900A2AC92 /* ListTableViewCell.swift */,
+			);
+			path = TableViewCell;
+			sourceTree = "<group>";
+		};
+		CEC3DD194D34B3D1FE9027DE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F0E89BC9BB556BD3602CFCAA /* Pods_CavistaCodeChallenge.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +196,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A022FD582515C0E8004F9160 /* Build configuration list for PBXNativeTarget "CavistaCodeChallenge" */;
 			buildPhases = (
+				6F8AE9A8C9ED68A5F63563C3 /* [CP] Check Pods Manifest.lock */,
 				A022FD402515C0E6004F9160 /* Sources */,
 				A022FD412515C0E6004F9160 /* Frameworks */,
 				A022FD422515C0E6004F9160 /* Resources */,
+				E700ABD04514961BC4FEA3F5 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -127,34 +251,74 @@
 			files = (
 				A022FD542515C0E8004F9160 /* LaunchScreen.storyboard in Resources */,
 				A022FD512515C0E8004F9160 /* Assets.xcassets in Resources */,
-				A022FD4F2515C0E6004F9160 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6F8AE9A8C9ED68A5F63563C3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CavistaCodeChallenge-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E700ABD04514961BC4FEA3F5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CavistaCodeChallenge/Pods-CavistaCodeChallenge-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CavistaCodeChallenge/Pods-CavistaCodeChallenge-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CavistaCodeChallenge/Pods-CavistaCodeChallenge-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A022FD402515C0E6004F9160 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A022FD4C2515C0E6004F9160 /* ViewController.swift in Sources */,
+				A01F65F725167527003C56E0 /* DetailViewController.swift in Sources */,
+				A022FD6D2515FACB004F9160 /* ListViewModel.swift in Sources */,
+				A022FD73251630EA004F9160 /* ListService.swift in Sources */,
+				A022FD7525163571004F9160 /* Constant.swift in Sources */,
+				A022FD7725163B4E004F9160 /* ListRepository.swift in Sources */,
+				A022FD652515D402004F9160 /* ListJsonBO.swift in Sources */,
+				A022FD6F2516000B004F9160 /* Extension.swift in Sources */,
+				A022FD4C2515C0E6004F9160 /* ListViewController.swift in Sources */,
 				A022FD482515C0E6004F9160 /* AppDelegate.swift in Sources */,
-				A022FD4A2515C0E6004F9160 /* SceneDelegate.swift in Sources */,
+				A0F52C1B25171A3900A2AC92 /* ListTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		A022FD4D2515C0E6004F9160 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A022FD4E2515C0E6004F9160 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		A022FD522515C0E8004F9160 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -282,16 +446,21 @@
 		};
 		A022FD592515C0E8004F9160 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A97E78284E0C98C3EAE901DA /* Pods-CavistaCodeChallenge.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = CavistaCodeChallenge/Info.plist;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = GG25HMY93Z;
+				INFOPLIST_FILE = "$(SRCROOT)/CavistaCodeChallenge/Resources/Info.plist";
+				INFOPLIST_PREPROCESS = YES;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.CavistaCodeChallenge;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "SmartXpense Development";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -299,16 +468,21 @@
 		};
 		A022FD5A2515C0E8004F9160 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8199FD663DB8FAF239406BFE /* Pods-CavistaCodeChallenge.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = CavistaCodeChallenge/Info.plist;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = GG25HMY93Z;
+				INFOPLIST_FILE = "$(SRCROOT)/CavistaCodeChallenge/Resources/Info.plist";
+				INFOPLIST_PREPROCESS = YES;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.CavistaCodeChallenge;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "SmartXpense Development";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

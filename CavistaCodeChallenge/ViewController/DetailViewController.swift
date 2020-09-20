@@ -9,7 +9,7 @@
 import UIKit
 class DetailViewController: UIViewController {
     //MARK:- Properties
-    private var detailTextView = UILabel()
+    private var detailTextView = UITextView()
     private var dateLabel = UILabel()
     private var listImageView = UIImageView()
     var listDetailBO: ListJsonBO?
@@ -36,8 +36,8 @@ class DetailViewController: UIViewController {
             maker.height.equalTo(view).multipliedBy(0.5)
         }
         
-        //descriptionLabel Constraints
-        detailTextView.snp.makeConstraints { (maker) in
+        //date Constraints
+        dateLabel.snp.makeConstraints { (maker) in
             maker.leading.equalTo(listImageView.snp.leading)
             maker.trailing.equalTo(listImageView.snp.trailing)
             if listDetailBO?.type == DictionaryKeys.image {
@@ -48,11 +48,12 @@ class DetailViewController: UIViewController {
         }
         
         //descriptionLabel Constraints
-        dateLabel.snp.makeConstraints { (maker) in
-            maker.leading.equalTo(detailTextView.snp.leading)
-            maker.trailing.equalTo(detailTextView.snp.trailing)
-            maker.top.equalTo(detailTextView.snp.bottom).offset(15)
-        }
+              detailTextView.snp.makeConstraints { (maker) in
+                  maker.leading.equalTo(dateLabel.snp.leading)
+                  maker.trailing.equalTo(dateLabel.snp.trailing)
+                  maker.top.equalTo(dateLabel.snp.bottom)
+                  maker.bottom.equalTo(self.view.safeAreaLayoutGuide.snp.bottom)
+              }
         
         setData()
     }
@@ -66,7 +67,6 @@ class DetailViewController: UIViewController {
         } else {
             detailTextView.text = listDetailBO?.data
         }
-        detailTextView.numberOfLines = 0
         detailTextView.textColor = .black
         detailTextView.textAlignment = .justified
         dateLabel.textAlignment = .center

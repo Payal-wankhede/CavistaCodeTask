@@ -50,8 +50,6 @@ class ListTableViewCell: UITableViewCell {
         }
         // Title text label
         titleTextLabel.snp.makeConstraints { (maker) in
-            maker.leading.equalTo(listImageView.snp.trailing).offset(10)
-            maker.trailing.equalToSuperview().offset(-8)
             maker.top.equalTo(listImageView.snp.top)
         }
         // Description text label
@@ -69,8 +67,17 @@ class ListTableViewCell: UITableViewCell {
             if imageDownloadTask == nil {
                 imageDownloadTask = listImageView.downloadImage(from: listJson.data ?? String.emptyString )
             }
+            // Remake constraint as per type
+            self.titleTextLabel.snp.remakeConstraints { (maker) in
+                maker.trailing.equalToSuperview().offset(-8)
+                maker.leading.equalTo(listImageView.snp.trailing).offset(10)
+            }
             titleTextLabel.text = listJson.date
         } else {
+            self.titleTextLabel.snp.remakeConstraints { (maker) in
+                maker.trailing.equalToSuperview().offset(-8)
+                maker.leading.equalToSuperview().offset(10)
+            }
             titleTextLabel.text = listJson.data
             descriptionTextLabel.text = listJson.date
         }

@@ -10,7 +10,6 @@ target 'CavistaCodeChallenge' do
     pod 'RealmSwift', '4.4.1'
     pod 'SnapKit'
     pod 'RxDataSources'
-    pod 'ReachabilitySwift'
   # Pods for CavistaCodeChallenge
 
 end

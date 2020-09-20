@@ -74,6 +74,7 @@ class ListTableViewCell: UITableViewCell {
             }
             titleTextLabel.text = listJson.date
         } else {
+            // Remake constraint as per type
             self.titleTextLabel.snp.remakeConstraints { (maker) in
                 maker.trailing.equalToSuperview().offset(-8)
                 maker.leading.equalToSuperview().offset(10)
